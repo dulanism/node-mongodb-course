@@ -12,6 +12,10 @@ app.get('/about', (request, response) => {
     response.sendFile(path.resolve(__dirname, 'about.html'))
 })
 
+app.get('/contact', (request, response) => {
+    response.sendFile(path.resolve(__dirname, 'contact.html'))
+})
+
 app.listen(3000, () => {
     console.log('App is listening on port 3000')
 
